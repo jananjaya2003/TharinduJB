@@ -3838,52 +3838,6 @@ body .loader .loader-box .loader-letter {
   transform: translateY(0);
 }
 
-/* Mobile hero: give the film its own stage above the portfolio copy. */
-@media (max-width: 600px) {
-  .hero {
-    --mobile-film-height: min(58svh, 480px);
-    min-height: auto;
-    padding: calc(66px + var(--mobile-film-height) + 28px) 18px 42px;
-    align-items: start;
-    background: #030504;
-  }
-
-  .hero-video {
-    z-index: 2;
-    top: 66px !important;
-    right: 0;
-    bottom: auto !important;
-    left: 0;
-    width: 100%;
-    height: var(--mobile-film-height) !important;
-    object-fit: contain !important;
-    object-position: center top !important;
-    background: #030504;
-  }
-
-  .hero-video-overlay {
-    z-index: 3;
-    top: 66px;
-    bottom: auto;
-    height: var(--mobile-film-height);
-    background: linear-gradient(
-      0deg,
-      #030504 0%,
-      rgba(3, 5, 4, 0.08) 22%,
-      transparent 55%
-    );
-    pointer-events: none;
-  }
-
-  .hero .hero-grid {
-    z-index: 4;
-    position: relative;
-  }
-
-  .hero-film-label {
-    z-index: 4;
-  }
-}
 :focus-visible {
   outline: 3px solid var(--lime);
   outline-offset: 4px;
